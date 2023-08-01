@@ -88,6 +88,17 @@
 //     activePlayer = activePlayer === 0 ? 1 : 0; //
 //   }
 // });
+const btnHowToPlay = document.querySelector('.btn-how-to-play');
+
+btnHowToPlay.addEventListener('click', () => {
+  window.showInformationMessage(`Welcome to the game! Here are the rules:
+  1. Roll the dice and try to get as close to 100 points as possible without going over.
+  2. If you roll a 1, your turn ends and you lose all your current points.
+  3. Hold your points to add them to your total score and switch to the other player.
+  4. The first player to reach 100 points wins!
+  
+  To roll the dice, click the "Roll Dice" button. To hold your points, click the "Hold" button. Good luck!`);
+});
 
 //! REFACTORED CODE  🆕
 //! Selecting Elements for DOM
